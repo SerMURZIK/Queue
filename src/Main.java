@@ -8,7 +8,7 @@ public class Main {
 
         while (!queue.isEmpty()) {
             Person personPoll = queue.poll();
-            System.out.println(personPoll.getName() + " " + personPoll.getSurname() + " прокатился на аттракционе.");
+            System.out.println(personPoll.getName() + " " + personPoll.getSurname() + " прокатился на аттракционе.\n");
             personPoll.wasAtAttraction();
             if (personPoll.getAmountOfTickets() > 0) {
                 queue.add(personPoll);
